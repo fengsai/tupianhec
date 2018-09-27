@@ -1,0 +1,477 @@
+﻿
+html, body, div, dl, button, del,  span,ul,li
+{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    -webkit-text-size-adjust:auto !important;
+    -webkit-user-select:none;
+    -webkit-tap-highlight-color: transparent;
+    /*-webkit-touch-callout: none;*/
+    -webkit-backface-visibility:hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-font-smoothing: antialiased;
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:100%;
+    /*overflow: hidden;*/
+    position: absolute;
+    /*-webkit-transform:translate3d(0,0,0);*/
+    /*防止键盘弹出*/
+    /*overflow-y:scroll;*/
+    /*-webkit-overflow-scrolling:touch;*/
+    /*background-color: #000;*/
+}
+body{
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-transform: translate3d(0px,0px,0px);
+}
+
+.container{
+    width: 10rem;
+    height: 100%;
+    margin: 0 auto;
+    /*display: -webkit-box;*/
+}
+
+.Tcss_window_s{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:1.95rem;
+    left: 0px;
+    overflow:hidden;
+    display: none;
+    z-index: 9999999;
+    background:
+    -webkit-gradient(radial, 512 389, 0, 512 389, 500,from(rgba(0,0,0,.2)), to(rgba(0,0,0,.7)));
+}
+
+.Tcss_window_ssss{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:2.4rem;
+    left: 0px;
+    overflow:hidden;
+    display: none;
+    z-index: 9999999;
+    background:
+    -webkit-gradient(radial, 512 389, 0, 512 389, 500,from(rgba(0,0,0,.2)), to(rgba(0,0,0,.7)));
+}
+
+.main_content {
+    width: 100%;
+    height:17.0625rem;
+    /*position: relative;*/
+    /*top: 0rem;*/
+    /*border: 3px solid blue;*/
+    background-color: #ffffff;
+    /*border-radius: 0 0 6px 6px;*/
+    border-top: 1px solid #eaeaea;
+}
+
+#wrapper_qb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#wrapper_qbb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.cz{
+    width:1.25rem;
+    height:1.25rem;
+    background-image: url("../img/s.png");
+    background-size:1rem 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.bx{
+    display: -webkit-box;
+    /*  -webkit-box-sizing: border-box ; */
+    display:-moz-box;
+    position: relative;
+}
+.bxh{
+    -webkit-box-orient:horizontal;
+    -moz-box-orient:horizontal;
+}
+.bxv{
+    -webkit-box-orient:vertical;
+    -moz-box-orient:vertical;
+}
+.bxf1{
+    -webkit-box-flex:1;
+    -moz-box-flex: 1;
+}
+.bxf2{
+    -webkit-box-flex:2;
+}
+.bxf3{
+    -webkit-box-flex:3;
+}
+.bxf4{
+    -webkit-box-flex:4;
+}
+.bxf5{
+    -webkit-box-flex:5;
+}
+.bxc{
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+}
+.h1{
+    height: 100%;
+}
+.w1{
+    width: 100%;
+}
+
+.w8{
+
+    width: 90%;
+}
+.h0{
+    height: 0%;
+}
+.h_0rem{
+    height: 0rem;
+}
+.w0{
+    width: 0%;
+}
+.oh{
+    overflow: hidden;
+}
+.bc1{
+    background-color: #f0f;
+}
+.display_b{
+    display: block;
+}
+.position_a{
+    position: absolute;
+}
+.position_r{
+    position: relative;
+}
+
+/*字体颜色*/
+
+/*list*/
+.G_list{
+    width: 100%;
+}
+.G_list_pre{
+    width: 100%;
+    height: 3rem;
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    border-bottom: 1px solid #f5f5f5;
+}
+/*list*/
+#wrapper {
+    position:absolute;
+    z-index:1;
+    height: 100%;
+    top:2.4375rem;
+    left:-9999px;
+    width:100%;
+    overflow:auto;
+}
+#scroller {
+    position:absolute; z-index:1;
+    /*	-webkit-touch-callout:none;*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    width:100%;
+    padding:0;
+}
+
+
+#pullDown{
+    background:#fff;
+    height:2.5rem;
+    width: 100%;
+    /*background-color: red;*/
+    text-align: center;
+    line-height:2.5rem;
+    /*padding:5px 10px;*/
+    border-bottom:1px solid #ebebeb;
+    font-weight:bold;
+    font-size:0.75rem;
+    color:#888;
+}
+#pullUp {
+    background:#fff;
+    height:2.5rem;
+    width: 100%;
+    /*background-color: red;*/
+    text-align: center;
+    line-height:2.5rem;
+    /*padding:5px 10px;*/
+    border-bottom:1px solid #ebebeb;
+    font-weight:bold;
+    font-size:0.75rem;
+    color:#888;
+}
+
+#pullDown .pullDownIcon{
+    display:block; float:left;
+    width:40px; height:40px;
+    /*background:url(pull-icon@2x.png) 0 0 no-repeat;*/
+    -webkit-background-size:40px 80px; background-size:40px 80px;
+    -webkit-transition-property:-webkit-transform;
+    -webkit-transition-duration:250ms;
+}
+ #pullUp .pullUpIcon  {
+    display:block; float:left;
+    width:40px; height:40px;
+    /*background:url(pull-icon@2x.png) 0 0 no-repeat;*/
+    -webkit-background-size:40px 80px; background-size:40px 80px;
+    -webkit-transition-property:-webkit-transform;
+    -webkit-transition-duration:250ms;
+}
+#pullDown .pullDownIcon {
+    -webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+    -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+    -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+    -webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+    background-position:0 100%;
+    -webkit-transform:rotate(0deg) translateZ(0);
+    -webkit-transition-duration:0ms;
+
+    -webkit-animation-name:loading;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+    from { -webkit-transform:rotate(0deg) translateZ(0); }
+    to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+.tip_error {
+    width: 100%;
+    height:2.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    color: #c6c6c6;
+    font-size: 0.75rem;
+    line-height:2.5rem;
+    margin-left: 0.6875rem;
+    text-align: center;
+}
+
+.addfs{
+
+    font-family: "avenir","arial";
+}
+
+.break_main {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -icab-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+.Tcss_window_windows{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    overflow:hidden;
+    display: none;
+    -webkit-box-align:center;
+    -webkit-backface-visibility:hidden;
+    -webkit-box-pack:center;
+    z-index: 9999999;
+    background:
+            -webkit-gradient(radial, 512 389, 0, 512 389, 500,
+            from(rgba(0,0,0,.2)), to(rgba(0,0,0,.5)));
+    background-color: rgba(0,0,0,.5); , color-stop(100%, #C2C2C2)
+}
+
+.Tcss_window_windowimg{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    overflow:hidden;
+    display: none;
+    /*-webkit-box-align:center;*/
+    -webkit-backface-visibility:hidden;
+    -webkit-box-pack:center;
+    z-index: 9999999;
+}
+
+.Tcss_window{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    overflow:hidden;
+    display: none;
+    -webkit-box-align:center;
+    -webkit-backface-visibility:hidden;
+    -webkit-box-pack:center;
+    -webkit-box-orient:vertical;
+    z-index: 9999999;
+    background:
+    -webkit-gradient(radial, 512 389, 0, 512 389, 500,
+    from(rgba(0,0,0,.2)), to(rgba(0,0,0,.5)));
+    background-color: rgba(0,0,0,.5); , color-stop(100%, #C2C2C2)
+
+}
+
+
+.Gconfirm_bt_OIS7{
+    height:2.5rem;
+    width: 100%;
+}
+.add_fs{
+    font-family: "avenir","arial";
+}
+
+
+.myScrollbarH {
+    position:absolute;
+    z-index:100;
+    height:8px;
+    bottom:1px;
+    left:2px;
+    right:7px
+}
+
+.myScrollbarH > div {
+    position:absolute;
+    z-index:100;
+    height:100%;
+
+    /* The following is probably what you want to customize */
+    background-image:-webkit-gradient(linear, 0 0, 100% 0, from(#a00), to(#f00));
+    background-image:-moz-linear-gradient(top, #f00, #900);
+    background-image:-o-linear-gradient(top, #f00, #900);
+
+    border:1px solid #900;
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding-box;
+    -o-background-clip:padding-box;
+    background-clip:padding-box;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius:4px;
+
+    -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    -moz-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    -o-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+}
+
+
+/**
+ *
+ * Vertical Scrollbar
+ *
+ */
+.myScrollbarV {
+    position:absolute;
+    z-index:100;
+    width:0.15rem;bottom:7px;top:2px;right:0.3rem;
+}
+
+.myScrollbarV > div {
+    position:absolute;
+    z-index:100;
+    width:100%;
+    background-color:rgb(176,102,6);
+    border:1px solid #900;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+}
+.scroll{
+    overflow-y:scroll;
+    -webkit-overflow-scrolling:touch;
+}
+[data-dpr="1"] body{font-size:12px}
+[data-dpr="2"] body{font-size:24px}
+[data-dpr="2.5"] body{font-size:30px}
+[data-dpr="2.75"] body{font-size:33px}
+[data-dpr="3"] body{font-size:36px}
+.scroll{
+    overflow-y:scroll;
+    -webkit-overflow-scrolling:touch;
+}
+*{
+    /*-webkit-touch-callout:none;  !*系统默认菜单被禁用*!*/
+    /*-webkit-user-select:none; !*webkit浏览器*!*/
+    /*-khtml-user-select:none; !*早期浏览器*!*/
+    /*-moz-user-select:none;!*火狐*!*/
+    /*-ms-user-select:none; !*IE10*!*/
+    /*user-select:none;*/
+}
+input,textarea {
+    /*-webkit-user-select:auto; !*webkit浏览器*!*/
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+.borboxsize{
+    box-sizing: border-box;
+}
+
+.fontall{
+    font-family: arial, verdana, sans-serif;
+}
+
+@font-face {
+    font-family: 'qmyb';
+    src:  url('yingbi.svg#qmyb') format('svg');,
+
+    font-weight: normal;
+    font-style: normal;
+}

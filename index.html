@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>碧浪</title>
+    <script>
+        !function (e) {
+            function t() {
+                var t = r.getBoundingClientRect().width;
+                /T5\//.test(e.navigator.userAgent) && (t = Math.floor(e.screen.width / e.devicePixelRatio)), t / l > 540 && (t = 540 * l);
+                var i = t / 10;
+                r.style.fontSize = i + "px", m.rem = e.rem = i
+            }
+
+            var i, a = e.document, r = a.documentElement, n = a.querySelector('meta[name="viewport"]'), o = a.querySelector('meta[name="flexible"]'), l = 0, s = 0, m = e.flexible || (e.flexible = {}), d = / baiduboxapp\//i.test(e.navigator.userAgent);
+            if (n) {
+                var p = n.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                p && (s = parseFloat(p[1]), l = parseInt(1 / s))
+            } else if (o) {
+                var c = o.getAttribute("content");
+                if (c) {
+                    var u = c.match(/initial\-dpr=([\d\.]+)/), f = c.match(/maximum\-dpr=([\d\.]+)/);
+                    u && (l = parseFloat(u[1]), s = parseFloat((1 / l).toFixed(2))), f && (l = parseFloat(f[1]), s = parseFloat((1 / l).toFixed(2)))
+                }
+            }
+            if (!l && !s) {
+                var v = (e.navigator.appVersion.match(/android/gi), e.navigator.appVersion.match(/iphone/gi)), h = e.devicePixelRatio;
+                l = v ? h >= 3 && (!l || l >= 3) ? 3 : h >= 2 && (!l || l >= 2) ? 2 : 1 : 1, s = 1 / l
+            }
+            if (r.setAttribute("data-dpr", l), !n)if (n = a.createElement("meta"), n.setAttribute("name", "viewport"), n.setAttribute("content", "initial-scale=" + s + ", maximum-scale=" + s + ", minimum-scale=" + s + ", user-scalable=no"), r.firstElementChild)r.firstElementChild.appendChild(n);
+            else {
+                var x = a.createElement("div");
+                x.appendChild(n), a.write(x.innerHTML)
+            }
+            d || e.addEventListener("resize", function () {
+                clearTimeout(i), i = setTimeout(t, 300)
+            }, !1), e.addEventListener("pageshow", function (e) {
+                e.persisted && (clearTimeout(i), i = setTimeout(t, 300))
+            }, !1), "complete" === a.readyState ? a.body.style.fontSize = 12 * l + "px" : a.addEventListener("DOMContentLoaded", function () {
+                a.body.style.fontSize = 12 * l + "px"
+            }, !1), t(), m.dpr = e.dpr = l, m.refreshRem = t, m.rem2px = function (e) {
+                var t = parseFloat(e) * this.rem;
+                return "string" == typeof e && e.match(/rem$/) && (t += "px"), t
+            }, m.px2rem = function (e) {
+                var t = parseFloat(e) / this.rem;
+                return "string" == typeof e && e.match(/px$/) && (t += "rem"), t
+            }
+        }(window);
+    </script>
+    <link rel="stylesheet" href="css/comm.css?v=3">
+    <link rel="prefetch" href="css/yingbi.svg">
+    <link rel="prefetch" href="css/yingbi.eot">
+    <link rel="prefetch" href="css/yingbi.otf">
+    <link rel="prefetch" href="css/yingbi.ttf">
+    <link rel="prefetch" href="css/yingbi.woff">
+    <script type="text/javascript">
+        document.write("<script type='text/javascript' src='util/configc.js?v=" + Math.random() + "'><\/script>")
+    </script>
+    <script type="text/javascript">
+        document.write("<script type='text/javascript' src='util/configc.js?v=" + Math.random() + "'><\/script>")
+    </script>
+    <script type="text/javascript">
+        document.write("<link rel='stylesheet' href='yemiancss/index.css?v=" + version + "'>");
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="Tcss_window_windowsssss" style="background: rgba(0,0,0,0.7);">
+    <div id="fsffs" class="bggdd">
+
+    </div>
+    <div class="jqbtn" id="jqqqq">图片截取</div>
+</div>
+<div class="Tcss_window_windows bxv" style="display: -webkit-box;">
+    <div class="loading">
+        <div class="loader-inner line-spin-fade-loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div style="position: absolute;bottom: 0.8rem;font-weight:bold;text-align: center;font-size: 130%;color: #fff;" class="w1">加载中...请稍后</div>
+    </div>
+</div>
+<div class="Tcss_window_windowimg" style="">
+    <div class="constai" id="constai"></div>
+</div>
+<div class="Tcss_window_windowimgs bxv" style="-webkit-box-align:center;">
+    <div class="constais">
+        <img src="" alt="">
+    </div>
+    <!--<div class="w1 bx bxc"><a href="#" class="aniudown borboxsize">下载图片</a></div>-->
+</div>
+<div class="Tcss_window" style="">
+    <div class="fd">
+        <img src="" alt="">
+    </div>
+    <div style="height: 1rem;"></div>
+    <div class="close">关闭</div>
+</div>
+<div class="container" style="position: relative;">
+    <div class="tip_errors bx bxc" style="display: none;">
+        <div></div>
+    </div>
+    <div class="cont bx bxv">
+        <img src="index/indexbg.jpg" alt="">
+        <div class="bgscc" id="bview" data-pd="w">
+            <!--<img src="./index/ccqz.png" data-pd="w" alt="">-->
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="lxssel bx bxc bxh">
+            <div class="tumm"></div>
+            <div class="bxf1 nianx borboxsize" style="height: 0.71875rem">1年
+               
+            </div>
+        </div>
+        <div class="qmxzbq bx bxh bxc">
+            <div class="slectbq borboxsize" style="padding-left: 0.18rem;">
+                请选择妈妈标签
+            </div>
+            <div style="" class="bxf1 h1"></div>
+            <div class="pjbiaoq">
+                <input type="text" placeholder="妈妈签名">
+            </div>
+        </div>
+        <div class="wenbenqu bx bxv">
+            <div class="w1" style="">成为妈妈后,需要适应新的角色。</div>
+            <div class="borboxsize" style=""><span style="vertical-align: super;">我用不断的练习,让自己找回</span><input class="tkti" type="text" placeholder="(填空,  不超8个字)"></div>
+        </div>
+        <div class="dzhb" style="display: none;"></div>
+        <div class="bxf1 w1 bottom" style="display: none;"></div>
+        <input type="file" name="open" id="open" class="open" onfocus="this.blur()"/>
+    </div>
+</div>
+<script src="util/zepto.min.js"></script>
+<script src="util/comm.js"></script>
+<script src="util/webload.js"></script>
+<script src="util/konva.min.js"></script>
+<script src="autocub/js/jquery-2.1.3.min.js"></script>
+<script src="autocub/js/iscroll-zoom.js"></script>
+<script src="autocub/js/hammer.js"></script>
+<script src="autocub/js/jquery.photoClip.js?v=3"></script>
+<script src="yemianjs/hecimg.js"></script>
+<script>
+    document.write("<script type='text/javascript' src='yemianjs/index.js?v=" + Math.random() + "'><\/script>")
+</script>
+</body>
+</html>
