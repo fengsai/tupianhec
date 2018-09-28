@@ -22,6 +22,7 @@
     //大的背景图
 
     function huntus(paget) {
+        $('.Tcss_window_windows').css("display","-webkit-box");
         var bgimg= new Image();
 
         var txt1=new k.Text({
@@ -52,23 +53,25 @@
 
         var txtqm=new k.Text({
             text:paget.qianming,
-            y:(680/64)*rpxs,
+            y:(660/64)*rpxs,
             x:(210/64)*rpxs,
             fill:'#fff',
-            fontSize:(80/24)*rpxb,
+            fontSize:(78/24)*rpxb,
             fontFamily:'YourWebFontName'
         });
 
         var imgqm=new Image();
 
         var txtbq=new k.Text({
+            width:(358/64)*rpxs,
             text:paget.biaoqian,
-            y:(731/64)*rpxs,
-            x:(350/64)*rpxs,
+            y:(740/64)*rpxs,
+            x:(210/64)*rpxs,
             fill:'#fff',
-            fontSize:(30/24)*rpxb,
+            fontSize:(23/24)*rpxb,
             fontFamily:'Source Han Sans CN',
-            fontStyle:"bold"
+            fontStyle:"bold",
+            align:'center'
         });
 
         bgimg.onload=function () {
@@ -117,6 +120,8 @@
 
                    // $(".aniudown").attr("download",ysscr);
                    // $(".aniudown").attr("href",ysscr);
+                    $('.Tcss_window_windows').css("display","none");
+
                     $(".Tcss_window_windowimgs").css("display","-webkit-box");
 
 

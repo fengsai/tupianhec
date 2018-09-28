@@ -223,7 +223,6 @@
             //$(".dzhb").css('display',"block");
             dzhb.addEventListener("click",function (e) {
                 //G$.hutu()
-                // $('.Tcss_window_windowimg').css("display","-webkit-box");
                 if(bgscc.dataset["pd"]==="w")
                 {
                     //alert("请上传图片")
